@@ -1,0 +1,244 @@
+/* ----------------- Global Reset ----------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+/* ----------------- Body ----------------- */
+body {
+    background: #f2f4f8;
+    color: #222;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* ----------------- Header ----------------- */
+header {
+    text-align: center;
+    background: #4a6cf7;
+    color: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.6rem;
+}
+
+/* ----------------- Navigation ----------------- */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px 0;
+    background: white;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+nav a {
+    text-decoration: none;
+    color: #4a6cf7;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    color: #ff5733;
+}
+
+/* ----------------- Sections ----------------- */
+section {
+    background: white;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.08);
+}
+
+section h2 {
+    margin-bottom: 10px;
+    color: #4a6cf7;
+    font-size: 1.9rem;
+}
+
+/* ----------------- About Section ----------------- */
+#about img {
+    width: 170px;
+    border-radius: 50%;
+    display: block;
+    margin: 15px auto;
+}
+
+/* ----------------- Lists ----------------- */
+ul, ol {
+    margin: 10px 25px;
+}
+
+li {
+    padding: 5px 0;
+}
+
+/* ----------------- Skills Grid ----------------- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.skills-grid h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.skills-grid ul {
+    background: default;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #4a6cf7;
+    list-style: square;
+}
+
+/* ----------------- Project Cards ----------------- */
+article {
+    background: default;
+    padding: 20px;
+    margin: 15px 0;
+    border-left: 6px solid #4a6cf7;
+    border-radius: 8px;
+}
+
+/* ----------------- Resume Section ----------------- */
+a {
+    color: #4a6cf7;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff5733;
+}
+
+/* ----------------- Form ----------------- */
+form {
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    background: #4a6cf7;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: #304ec9;
+}
+
+/* ----------------- Video Section ----------------- */
+video {
+    display: block;
+    margin: 10px auto;
+    border: 3px solid #4a6cf7;
+    border-radius: 10px;
+}
+
+/* ----------------- Footer ----------------- */
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 25px;
+    background: #333;
+    color: white;
+    border-radius: 10px;
+}
+
+/*----JavaScript Task Manager Section----*/
+/* ------------------ DARK MODE ------------------ */
+.dark-mode {
+    background: #111;
+    color: #eee;
+}
+
+.dark-mode section {
+    background: #222;
+    color: #eee;
+}
+
+.dark-mode nav ul {
+    background: #222;
+}
+
+.dark-mode footer {
+    background: #000;
+}
+
+#modeToggle {
+    padding: 10px 20px;
+    background: #4a6cf7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+#modeToggle:hover {
+    background: #304ec9;
+}
+
+/* ------------------ TASK MANAGER ------------------ */
+#taskManager ul {
+    margin-top: 15px;
+    list-style: none;
+}
+
+#taskManager li {
+    padding: 10px;
+    background: #eef2ff;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.completeBtn,
+.deleteBtn {
+    padding: 5px 10px;
+    border: none;
+    background: #4a6cf7;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.deleteBtn {
+    background: #ff4757;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: green;
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    
+
+
+
+</head>
+<body>
+
+    <!-- HEADER SECTION -->
+    <header>
+        <button id="modeToggle">🌙 Dark Mode</button>
+
+        <h1>Welcome to My Portfolio</h1>
+        <p></p>
+    </header>
+    
+
+    <!-- NAVIGATION -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+       <section>
+            <h2>JavaScript Counter</h2>
+            <p>Count: <span id="counterValue">0</span></p>
+            <button onclick="increaseCounter()">Increase</button>
+        </section>
+
+
+
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="1708883684960.jpg" alt="My Photo" width="200">
+            <p>Hello! My name is <strong>KETHAVATH SHIVA</strong>. Welcome to my Portfolio.</p>
+            <p>Hello! I’m Kethavath Shiva, a passionate Data Analyst 
+            and Web Developer with strong skills in Python, SQL, HTML, CSS, Machine 
+            Learning, and Data Visualization.</p>
+        <p>
+            I enjoy exploring data, building meaningful dashboards,
+             and creating clean, structured web pages.
+        </p>
+        <p>
+            I have worked on projects like Rainfall Forecasting, Sales Performance Dashboard, 
+            and various analytics and development 
+            tasks that helped me improve my technical and problem-solving abilities.
+        </p>
+        <p>
+            I’m always excited to learn new technologies, improve my skills, 
+            and take on real-world challenges 
+            in Data Analytics, Machine Learning, and Web Development.
+        </p>
+            <h3>My Hobbies</h3>
+            <ul>
+                <li>Coding</li>
+                <li>Reading</li>
+                <li>Gaming</li>
+                <li>Learning new technologies</li>
+            </ul>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-domain">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>SQL</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                    </ul>
+                </div>
+
+                <div class="skill-domain">
+                    <h3>Databases</h3>
+                    <ul>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+
+                <div class="skill-domain">
+                    <h3>CS Fundamentals</h3>
+                    <ul>
+                        <li>AI</li>
+                        <li>Computer Networks</li>
+                        <li>Data Structures & Algorithms (DSA)</li>
+                        <li>Design and Analysis of Algorithms (DAA)</li>
+                        <li>OOPs</li>
+                        <li>DBMS</li>
+                        <li>Operating Systems (OS)</li>
+                    </ul>
+                </div>
+
+                <div class="skill-domain">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>MS Office</li>
+                        <li>VS Code</li>
+                        <li>Git / GitHub</li>
+                        <li>NumPy</li>
+                        <li>Pandas</li>
+                        <li>Matplotlib</li>
+                    </ul>
+                </div>
+
+                <div class="skill-domain">
+                    <h3>Technologies</h3>
+                    <ul>
+                        <li>Machine Learning (ML)</li>
+                        <li>scikit-learn</li>
+                        <li>Data Analytics</li>
+                        <li>Data Science (Python, R)</li>
+                        <li>Power BI</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <article>
+                <h3>Sales Performance Dashboard</h3>
+                
+                <p>I developed a dynamic superstore sales dashboard by transforming raw data with Power Query, writing
+                complex DAX measures, and enabling deep-dive analysis through interactive filters and visuals. The
+                dashboard supports sales trend analysis, category and region breakdowns, and KPI tracking for
+                stakeholders.</p>
+                <p><strong>Tools/Tech:</strong> Power BI, Power Query, DAX</p>
+            </article>
+
+            <article>
+                <h3>Rain Forecasting</h3>
+                <p>Developed a rainfall prediction model using historical humidity and rainfall data. Applied Random
+                Forest regression and SARIMA, and performed time-based feature engineering to forecast daily
+                rainfall. Visualized prediction trends to aid analysis and decision-making.</p>
+                <p><strong>Tools/Tech:</strong> Python, scikit-learn, statsmodels (SARIMA), Pandas, Matplotlib</p>
+            </article>
+        </section>
+        <section>
+            <h2>Resume:</h2>
+            <p>Download my resume <a href="KShiva-WebDeveloper_resume.pdf" download>here</a>.</p>
+        </section>
+        <!-- CONTACT FORM -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message"></textarea><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- MULTIMEDIA EXAMPLE -->
+        <section>
+            <h2>Sample Video</h2>
+            <video width="300" controls>
+                <p>my project Sample Video</p>
+                <source src="Student analysis.mp4" type="video/mp4">
+            </video>
+        </section>
+
+    </main>
+    <section id="taskManager">
+    
+
+        <input type="text" id="taskInput" placeholder="Enter a task">
+        <button id="addTaskBtn">Add Task</button>
+
+        <ul id="taskList"></ul>
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 My Portfolio. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
